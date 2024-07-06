@@ -69,9 +69,7 @@ An implementation of various CPU scheduling algorithms in C++. The algorithms in
 
 ### Aging
 
-- Xinu is an operating system developed at Purdue University. The scheduling invariant in Xinu assumes that at any
-time, the highest priority process eligible for CPU service is executing, with round-robin scheduling for processes of
-equal priority. Under this scheduling policy, the processes with the highest priority will always be executing. As a
+- Under this scheduling policy, the processes with the highest priority will always be executing. As a
 result, all the processes with lower priority will never get CPU time. As a result, starvation is produced in Xinu when
 we have two or more processes eligible for execution that have different priorities. For ease of discussion, we call the
 set of processes in the ready list and the current process as the eligible processes.
